@@ -41,6 +41,10 @@ objects = [(2, "Организация", NULL),
 
 
 def sorter_by_indx(array, indx):
+    '''
+    indx - по какому элементу сортировать списки в массиве
+    Сортирует в обратном порядке
+    '''
     array_len = len(array)
     gap = (array_len*10//13) if array_len > 1 else 0
     while gap:
